@@ -6,7 +6,7 @@ import {
   AccordionItem, Card, CardBody
 } from 'reactstrap';
 
-function Faq() {
+const Faq = () => {
   return (
     <div>
       <Card className='card-faq'>
@@ -59,4 +59,4 @@ function Faq() {
   )
 }
 
-export default Faq
+export default Faq;

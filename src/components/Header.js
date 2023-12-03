@@ -33,7 +33,7 @@ const Header = ({ setPage }) => {
       <nav className={`navigation ${isMobileMenuOpen ? 'show' : ''}`}>
         <a href="#home" onClick={() => handleItemClick('Home')}>Home</a>
         <a href="#about" onClick={() => handleItemClick('About')}>About</a>
-        <a href="#faq" onClick={() => handleItemClick('FAQ')}>FAQ</a>
+        <a href="#faq" onClick={() => handleItemClick('Faq')}>FAQ</a>
         <a href="#contact" onClick={() => handleItemClick('ContactUs')}>Contact Us</a>
         {/* Additional links can be added here */}
       </nav>
