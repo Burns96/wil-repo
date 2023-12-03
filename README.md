@@ -11,3 +11,4 @@
 6. $ git checkout main
 7. $ git pull origin main
 8. $ git branch -d <name of branch>
+hello world

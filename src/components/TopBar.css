@@ -1,0 +1,43 @@
+/* TopBar.css */
+
+.top-bar {
+    background-color: #005A9C;
+    color: white;
+    padding: 10px 20px;
+    text-align: right;
+    position: relative;
+  }
+  
+  .top-bar img {
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+  
+  .search-container {
+    display: inline-block;
+    position: absolute;
+    right: 150px;
+    top: 10px;
+  }
+  
+  .search-container input[type="text"] {
+    padding: 5px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .search-container button {
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .search-container button:hover {
+    background-color: #ddd;
+  }
+  

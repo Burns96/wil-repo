@@ -1,26 +1,31 @@
-import React from 'react'
-import Home from './pages/Home'
-import Faq from './pages/Faq'
-import About from './pages/About'
-import ContactUs from './pages/ContactUs'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import './App.css'
-import { Route, Routes } from 'react-router-dom' 
+import React, { useState, useEffect } from 'react';
+import Home from './pages/Home';
+import About from './pages/About';
+import ContactUs from './pages/ContactUs';
+import Faq from './pages/Faq';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import './App.css';
 
-function App() {
+const App = () => {
+  const [page, setPage] = useState('Home');
+
+  useEffect(() => {
+    document.title = `${page} Page`;
+  }, [page]);
+
   return (
-    <div>
-        <Header />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/faq' element={<Faq />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/contactus' element={<ContactUs />} />
-        </Routes>
-        <Footer />
+    <div className="site-container">
+      <Header setPage={setPage} />
+      <main className="content">
+        {page === 'Home' && <Home />}
+        {page === 'About' && <About />}
+        {page === 'ContactUs' && <ContactUs />}
+        {page === 'Faq' && <Faq />}
+      </main>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
