@@ -1,16 +1,9 @@
-  import React from 'react'
-  import { Navbar } from 'reactstrap'
+import React from 'react';
+import './Footer.css'; // Assume CSS specific to this component is stored here
 
-function Footer() {
+const Footer = () => {
   return (
-    <>
-        <Navbar 
-            className='navbar-footer' 
-            fixed="bottom" 
-            color='info'
-        >
-            <p id='footer-text'>&copy; name of team </p>
-        <div className="footer">
+    <div className="footer">
       <div>Resources</div>
       <div>Departments</div>
       <div>Boards & Commissions</div>
@@ -19,11 +12,10 @@ function Footer() {
         <a href="#" className="fab fa-facebook-f"></a>
         <a href="#" className="fab fa-twitter"></a>
         <a href="#" className="fab fa-instagram"></a>
+        {/* More social media links here */}
       </div>
     </div>
-        </Navbar>
-    </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

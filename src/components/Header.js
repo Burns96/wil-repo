@@ -1,48 +1,44 @@
-import React, { useState } from 'react'
-import {
-Collapse,
-Navbar,
-NavbarToggler,
-NavbarBrand,
-Nav,
-NavItem,
-} from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import './Header.css';
 
-function Header() {
+const Header = ({ setPage }) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-    const [collapsed, setCollapsed] = useState(true);
-    const toggleNavbar = () => setCollapsed(!collapsed);
+  const handleItemClick = (pageName) => {
+    setPage(pageName);
+    setIsMobileMenuOpen(false); // Close the mobile menu on item click
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen); // Toggle the mobile menu
+  };
 
   return (
-    <div> 
-        <Navbar color="info" light> 
-        <NavbarBrand href="/" > 
-            Website Name
-        </NavbarBrand>
-        <NavbarToggler onClick={toggleNavbar} className="me-2" />
-        <Collapse isOpen={!collapsed} navbar>
-            <Nav navbar>
-            <NavItem> 
-                <NavLink to="/">
-                    Home 
-                </NavLink> 
-            </NavItem>
-            <NavItem>
-                <NavLink to="/faq"> 
-                FAQ
-                </NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink to="/contactus"> 
-                Contact Us
-                </NavLink>
-            </NavItem>
-            </Nav>
-        </Collapse>
-        </Navbar>
-    </div>
-  )
-}
+    <header className="header-container">
+      <div className="top-bar">
+        <img src="city_logo.png" alt="City Logo" />
+        {/* Include the translate button within the top bar */}
+        <button className="translate-button">Translate</button>
+        {/* Toggle button for mobile view */}
+        <button className="nav-toggle" onClick={toggleMobileMenu}>
+          {isMobileMenuOpen ? 'Close' : 'Menu'}
+        </button>
+      </div>
+      {/* Search container accessible on mobile */}
+      <div className="search-container">
+        <input type="text" placeholder="Search..." />
+        <button>Search</button>
+      </div>
+      {/* Toggle navigation for mobile */}
+      <nav className={`navigation ${isMobileMenuOpen ? 'show' : ''}`}>
+        <a href="#home" onClick={() => handleItemClick('Home')}>Home</a>
+        <a href="#about" onClick={() => handleItemClick('About')}>About</a>
+        <a href="#faq" onClick={() => handleItemClick('FAQ')}>FAQ</a>
+        <a href="#contact" onClick={() => handleItemClick('ContactUs')}>Contact Us</a>
+        {/* Additional links can be added here */}
+      </nav>
+    </header>
+  );
+};
 
-export default Header
+export default Header;

@@ -1,0 +1,23 @@
+/* Navigation.css */
+
+.navigation {
+    background-color: #013A6B;
+    color: white;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .navigation a {
+    padding: 10px 15px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    float: left;
+  }
+  
+  .navigation a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  

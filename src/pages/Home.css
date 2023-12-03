@@ -1,0 +1,57 @@
+/* Home.css */
+
+.home-body {
+  text-align: center;
+  color: white;
+}
+
+.home-title {
+  font-size: 2em; /* Adjust this value as needed for different screen sizes */
+  color: black;
+  margin-bottom: 20px; /* Adds some space below the title */
+  /* Removed the absolute positioning and transform properties */
+}
+
+.home-body-images {
+  display: flex;
+  justify-content: center; /* Center images horizontally */
+  align-items: center; /* Align images vertically */
+  /* Removed the margin-bottom property since the title is now above the images */
+}
+
+.home-body-images img {
+  width: 50%; /* Each image takes half of the container's width */
+  height: 300px; /* Fixed height for both images */
+  object-fit: cover; /* Ensure the images cover their area */
+}
+
+/* Specific style for the second image to flip it */
+.home-body-images img:last-child {
+  transform: scaleX(-1); /* Flip the second image horizontally */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .home-title {
+    font-size: 1.75em; /* Smaller font size on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 1.5em; /* Smaller font size on small screens */
+  }
+  .home-body-images {
+    flex-direction: column; /* Stack images vertically on small screens */
+  }
+  .home-body-images img {
+    width: 80%; /* Each image takes more space when stacked */
+    margin-bottom: 10px; /* Add space between the stacked images */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 1.25em; /* Smaller font size for very small screens */
+  }
+}
