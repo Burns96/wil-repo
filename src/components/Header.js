@@ -33,6 +33,11 @@ function Header() {
                 FAQ
                 </NavLink>
             </NavItem>
+            <NavItem>
+                <NavLink to="/contactus"> 
+                Contact Us
+                </NavLink>
+            </NavItem>
             </Nav>
         </Collapse>
         </Navbar>
