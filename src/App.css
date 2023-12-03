@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.card-faq {
+  align-items: center;
+}
+.card-body-faq {
+  width: 100vh;
+}

@@ -1,6 +1,8 @@
 import React from 'react'
 import Home from './pages/Home'
 import Faq from './pages/Faq'
+import About from './pages/About'
+import ContactUs from './pages/ContactUs'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import './App.css'
