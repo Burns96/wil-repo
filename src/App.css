@@ -42,3 +42,88 @@ button:hover {
     justify-content: space-around;
   }
 }
+
+.contact_us_form {
+  background-color: #D9D9D9;
+  float: left;
+  width: 31%;
+  margin-left: 5%;
+  padding: 3%;
+  padding-top: 0%;
+}
+
+.departments {
+  background-color: #D9D9D9;
+  float: right;
+  width: 44%;
+  margin-right: 5%;
+  padding: 3%;
+  padding-bottom: 15vh;
+  padding-top: 0%;
+}
+
+h1 {
+  font-weight: 400px;
+  font-size: 250%;
+}
+
+h3 {
+  padding-left: 3%;
+  font-size: 125%;
+}
+
+.user_name {
+  float: right;
+  width: 72%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-right: 3%;
+}
+
+.user_id {
+  float: right;
+  width: 72%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-right: 3%;
+}
+
+.user_message{
+  float: right;
+  width: 95%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  height: 300px;
+  margin-right: 3%;
+}
+
+.btn_submit {
+  float: right;
+  margin-right: 3%;
+  margin-top: 5%;
+  font-weight: 400;
+  font-size: 100%;
+  padding: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #299EC1;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dep1 {
+  float: left;
+  padding-top: 0%;
+  padding-left: 3%;
+  width: 43%;
+}
+
+.dep2 {
+  float: right;
+  padding-top: 0%;
+  padding-right: 3%;
+  width: 43%;
+}
+
+p {
+  margin-left: 10%;
+}
