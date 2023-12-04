@@ -18,6 +18,7 @@ const Faq = ({ language }) => {
         { question: "FAQ 3", answer: "FAQ 3 answer will go here" },
         { question: "FAQ 4", answer: "FAQ 4 answer will go here" },
         { question: "FAQ 5", answer: "FAQ 5 answer will be here" },
+        { question: "Cant find your answer?", answer: "please visit our contact us page" },
         
       ];
 
