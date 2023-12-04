@@ -52,6 +52,14 @@ const Faq = () => {
                 FAQ 5 answer will be here
               </AccordionBody>
             </AccordionItem>
+            <AccordionItem>
+              <AccordionHeader targetId="6">
+                Can't find your answer or have another Queston?
+              </AccordionHeader>
+              <AccordionBody accordionId="6">
+                  Visit to our contact page to submit a new question or request information!
+              </AccordionBody>
+            </AccordionItem>
           </UncontrolledAccordion>
         </CardBody>
     </Card>
