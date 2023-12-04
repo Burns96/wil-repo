@@ -15,32 +15,33 @@ function ContactUs() {
           <form>
             <label>
               Name: <input type="text" className="user_name" />
-            </label>
+            </label><br></br>
             <label>
               Email: <input type="text" className="user_id" />
-            </label>
+            </label><br></br>
             <label>
               Message: <input type="text" className="user_message" />
-            </label>
+            </label><br></br><br></br>
             <button type="button" className="btn_submit">
               <b>SUBMIT</b>
             </button>
           </form>
         </div>
 
+        
         <div className="departments">
-          <h1>DEPARTMENTS</h1>
+          <center><h1>DEPARTMENTS</h1><br></br></center>
           <div className="dep1">
             <h2>City Hall</h2>
             <p>161 E. Grand River Ave. Williamston, MI 48895</p>
             <p>Office Hours: Mon - Fri, 8AM - 5PM</p>
-            <p>517-655-2774</p>
+            <p>517-655-2774</p><br></br>
             <h2>Police Department</h2>
             <p>175 E. Grand River Ave. Williamston, MI 48895</p>
             <p>517-655-4222</p>
             <p>
               <b>IF EMERGENCY - DIAL 911</b>
-            </p>
+            </p><br></br>
             <h2>Department of Public Works</h2>
             <p>781 Progress Ct. Williamston, MI 48895</p>
             <p>Office Hours: Vary, call City Hall for assistance</p>
@@ -51,7 +52,7 @@ function ContactUs() {
             <h2>Assessing Department</h2>
             <p>161 E. Grand River Ave. Williamston, MI 48895</p>
             <p>Office Hours: Mon - Fri, 8AM - 5PM</p>
-            <p>517-655-2774</p>
+            <p>517-655-2774</p><br></br>
             <h2>Building Department</h2>
             <p>2300 E Grand River Ave. Howell, MI 48843</p>
             <p>Office Hours: Mon - Fri, 8AM - 5PM</p>
