@@ -1,4 +1,4 @@
-/* Base styles for mobile-first design */
+
 .header-container {
   font-family: Arial, sans-serif;
 }
@@ -8,7 +8,7 @@
   color: white;
   padding: 10px 20px;
   display: flex;
-  justify-content: flex-start; /* Change 'start' to 'flex-start' */
+  justify-content: flex-start; 
   align-items: center;
 }
 
@@ -16,10 +16,10 @@
   height: 40px;
 }
 
-/* Ensure the search-container is part of the normal document flow on mobile */
+
 .search-container {
   position: static;
-  display: block; /* The search bar is always visible */
+  display: block; 
 }
 
 .search-container input[type="text"],
@@ -40,18 +40,18 @@
   background-color: #ddd;
 }
 
-/* The navigation links are hidden by default on mobile */
+
 .navigation {
   background-color: #013A6B;
   overflow: hidden;
-  display: none; /* Hide navigation links on mobile by default */
+  display: none; 
 }
 
 .navigation a {
   padding: 10px 15px;
   color: white;
   text-decoration: none;
-  display: block; /* Stack the links vertically on mobile */
+  display: block; 
 }
 
 .navigation a:hover {
@@ -59,17 +59,17 @@
   color: black;
 }
 
-/* Toggle button for mobile view */
+
 .nav-toggle {
   background-color: #013A9C;
   color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-  display: none; /* Hidden on larger screens, shown on mobile */
+  display: none; 
 }
 
-/* Styles for the translate button */
+
 .translate-button {
   background-color: #f1f1f1;
   color: #005A9C;
@@ -77,70 +77,70 @@
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  display: block; /* Always visible */
+  display: block; 
 }
 
 .translate-button:hover {
   background-color: #ddd;
 }
 
-/* Responsive styles */
+
 @media (max-width: 767px) {
   .nav-toggle {
-    display: block; /* Show the toggle button on mobile screens */
+    display: block; 
   }
   
-  /* Mobile view adjustments */
+  
   .top-bar {
-    justify-content: flex-start; /* Adjusted for mobile layout */
-    padding: 10px; /* Less padding on mobile for more space */
+    justify-content: flex-start; 
+    padding: 10px; 
   }
 
   .search-container {
-    width: calc(100% - 20px); /* Full width on mobile minus padding */
-    margin: 10px; /* Margin for spacing */
-    box-sizing: border-box; /* Include padding and border in the width calculation */
+    width: calc(100% - 20px); 
+    margin: 10px; 
+    box-sizing: border-box; 
   }
 
   .search-container input[type="text"],
   .search-container button {
-    width: 100%; /* Full width for search input and button */
+    width: 100%; 
   }
 
   .navigation {
-    display: none; /* Navigation is hidden by default on mobile */
-    padding-top: 10px; /* Space above navigation links */
+    display: none; 
+    padding-top: 10px; 
   }
   
   .navigation.show {
-    display: block; /* Show navigation when 'show' class is added */
+    display: block; 
   }
 }
 
 @media (min-width: 768px) {
-  /* Tablet and desktop specific styles here */
+  
   .search-container {
-    position: absolute; /* Absolute positioning for larger screens */
-    right: 120px; /* Adjust the right position for the search bar */
+    position: absolute; 
+    right: 120px; 
     top: 10px;
   }
 
   .translate-button {
     position: absolute;
-    right: 20px; /* Position the translate button to the far right */
+    right: 20px; 
     top: 10px;
   }
 
   .navigation {
-    display: flex; /* Flexbox layout for horizontal alignment */
-    justify-content: flex-start; /* Adjusted for larger screens */
+    display: flex; 
+    justify-content: flex-start; 
   }
 
   .navigation a {
-    display: inline-block; /* Horizontal alignment of links */
+    display: inline-block; 
   }
   
   .nav-toggle {
-    display: none; /* Hide the toggle button on larger screens */
+    display: none; 
   }
 }

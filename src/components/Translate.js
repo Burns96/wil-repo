@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = process.env.REACT_APP_GOOGLE_TRANSLATE_API_KEY;  // Replace with your actual API key
+const API_KEY = process.env.REACT_APP_GOOGLE_TRANSLATE_API_KEY;  
 
 export const translateText = async (text, targetLanguage) => {
   try {
@@ -14,6 +14,6 @@ export const translateText = async (text, targetLanguage) => {
     return response.data.data.translations[0].translatedText;
   } catch (error) {
     console.error('Error during translation', error);
-    return text;  // return original text if there's an error
+    return text;  
   }
 };

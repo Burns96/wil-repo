@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import Navigation from './Navigation'; // Adjust the import path as necessary
+import Navigation from './Navigation'; 
 import './Header.css';
 
 const Header = ({ setPage, setLanguage, texts }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen); // Toggle the mobile menu
+    setIsMobileMenuOpen(!isMobileMenuOpen); 
   };
 
-  // Function to handle language change
+  
   const handleLanguageChange = (language) => {
-    setLanguage(language); // Update the language in App.js
+    setLanguage(language); 
   };
 
   return (
@@ -22,7 +22,7 @@ const Header = ({ setPage, setLanguage, texts }) => {
           <option value="en">English</option>
           <option value="es">Español</option>
           <option value="fr">French</option>
-          {/* Add more languages as needed */}
+          
         </select>
         <button className="nav-toggle" onClick={toggleMobileMenu}>
           {isMobileMenuOpen ? 'Close' : 'Menu'}

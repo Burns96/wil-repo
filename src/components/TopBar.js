@@ -1,5 +1,5 @@
 import React from 'react';
-import './TopBar.css'; // Assume CSS specific to this component is stored here
+import './TopBar.css'; 
 
 const TopBar = () => {
   return (

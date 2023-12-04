@@ -1,26 +1,26 @@
-/* Footer.css */
 
-/* Reset margin and padding for the body to prevent any unexpected space */
+
+
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%; /* Ensure the html and body are at least the height of the viewport */
+  height: 100%; 
 }
 
-/* Flexbox layout for the entire page content */
+
 .site-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* Main content style, it should grow and take necessary space, pushing the footer down */
+
 .content {
   flex: 1;
-  padding: 20px; /* Add padding as needed */
+  padding: 20px; 
 }
 
-/* Footer styles */
+
 .footer {
   background-color: #333;
   color: white;
@@ -30,7 +30,7 @@ body, html {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  box-sizing: border-box; /* This ensures padding is included in the height calculation */
+  box-sizing: border-box; 
 }
 
 .footer > div,
@@ -43,7 +43,7 @@ body, html {
 }
 
 .social-media a {
-  text-decoration: none; /* This removes the underline */
+  text-decoration: none; 
   color: white;
   margin: 0 10px;
 }
@@ -52,7 +52,7 @@ body, html {
   color: #FF0000;
 }
 
-/* Media query for larger screens */
+
 @media screen and (min-width: 768px) {
   .footer {
     justify-content: space-around;

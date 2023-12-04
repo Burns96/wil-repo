@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { translateText } from '../components/Translate.js'; // Adjust the path if necessary
+import { translateText } from '../components/Translate.js'; 
 import './Home.css';
 
 const Home = ({ language }) => {
