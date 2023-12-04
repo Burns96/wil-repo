@@ -32,10 +32,22 @@ function ContactUs({ language }) {
   }, [language]);
 
 
-  const handleButtonClick = () => { // delete this if it doesnt work
-    alert('Message received!');
+  const handleButtonClick = async () => {
+    try {
+      // Define the message to be translated
+      const messageToTranslate = 'Message received!';
+  
+      // Translate the message based on the selected language
+      const translatedMessage = await translateText(messageToTranslate, language);
+  
+      // Show the translated message in an alert
+      alert(translatedMessage);
+    } catch (error) {
+      console.error('Error during translation', error);
+      alert('Message received!'); // If there's an error, show the original message
+    }
   };
-
+  
   return (
     <>
       <main className='contact-container'>
