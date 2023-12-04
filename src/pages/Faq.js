@@ -54,10 +54,10 @@ const Faq = () => {
             </AccordionItem>
             <AccordionItem>
               <AccordionHeader targetId="6">
-                Can't find your answer or have another Queston?
+                Can't find your answer or have another queston?
               </AccordionHeader>
               <AccordionBody accordionId="6">
-                  Visit to our contact page to submit a new question or request information!
+                  Visit our 'Contact Us' page to submit a new question or request information!
               </AccordionBody>
             </AccordionItem>
           </UncontrolledAccordion>
