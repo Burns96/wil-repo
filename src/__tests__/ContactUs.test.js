@@ -7,8 +7,7 @@ describe("<ContactUs />", () => {
         render(
             <ContactUs />
         )
-        screen.debug()
-        screen.logTestingPlaygroundURL();
+
 
         const contact = screen.getByRole('heading', {
             name: /city hall/i
@@ -23,8 +22,7 @@ describe("<ContactUs />", () => {
         render(
             <ContactUs />
         )
-        screen.debug()
-        screen.logTestingPlaygroundURL();
+
 
         const textbox = screen.getByRole('textbox', {
             name: /name:/i
