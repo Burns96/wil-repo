@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Home from './pages/Home';
-import About from './pages/About';
 import ContactUs from './pages/ContactUs';
 import Faq from './pages/Faq';
 import Header from './components/Header';
@@ -19,7 +18,6 @@ const App = () => {
       <Header setPage={setPage} />
       <main className="content">
         {page === 'Home' && <Home />}
-        {page === 'About' && <About />}
         {page === 'ContactUs' && <ContactUs />}
         {page === 'Faq' && <Faq />}
       </main>
