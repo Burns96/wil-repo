@@ -1,28 +1,37 @@
-// Home.js
+import React, { useState, useEffect } from 'react';
+import { translateText } from '../components/Translate.js'; // Adjust the path if necessary
+import './Home.css';
 
-import React from 'react';
-import './Home.css'; // Ensure the CSS path is correct
+const Home = ({ language }) => {
+  const [translatedText, setTranslatedText] = useState({
+    homeTitle: "City of Williamston, Michigan",
+    oldTownAlt: "Scenic view of old Williamston",
+    newTownAlt: "Modern landscape of new Williamston"
+  });
 
-const Home = () => {
+  useEffect(() => {
+    const translateContent = async () => {
+      const homeTitle = await translateText("City of Williamston, Michigan", language);
+      const oldTownAlt = await translateText("Scenic view of old Williamston", language);
+      const newTownAlt = await translateText("Modern landscape of new Williamston", language);
+      setTranslatedText({ homeTitle, oldTownAlt, newTownAlt });
+    };
+
+    translateContent();
+  }, [language]);
+
   return (
     <div>
-    
-
-      {/* Body content */}
       <div className="home-body">
-        {/* Title at the top of the container */}
-        <h1 className="home-title">City of Williamston, Michigan</h1>
-
-        {/* Image container */}
+        <h1 className="home-title">{translatedText.homeTitle}</h1>
         <div className="home-body-images">
-        <img src="Old_town.jpg" alt="Scenic view of old Williamston" />
-        <img src="new_town.jpg" alt="Modern landscape of new Williamston" style={{ transform: 'scaleX(-1)' }} />
+          <img src="Old_town.jpg" alt={translatedText.oldTownAlt} />
+          <img src="new_town.jpg" alt={translatedText.newTownAlt} style={{ transform: 'scaleX(-1)' }} />
         </div>
       </div>
-
-
     </div>
   );
 };
 
 export default Home;
+

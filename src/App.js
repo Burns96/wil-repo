@@ -8,6 +8,7 @@ import './App.css';
 
 const App = () => {
   const [page, setPage] = useState('Home');
+  const [language, setLanguage] = useState('en'); // Initialize language state
 
   useEffect(() => {
     document.title = `${page} Page`;
@@ -15,13 +16,13 @@ const App = () => {
 
   return (
     <div className="site-container">
-      <Header setPage={setPage} />
+      <Header setPage={setPage} setLanguage={setLanguage} /> {/* Pass setLanguage to Header */}
       <main className="content">
-        {page === 'Home' && <Home />}
-        {page === 'ContactUs' && <ContactUs />}
-        {page === 'Faq' && <Faq />}
+        {page === 'Home' && <Home language={language} />} {/* Pass language to Home */}
+        {page === 'ContactUs' && <ContactUs language={language} />} {/* Pass language to ContactUs */}
+        {page === 'Faq' && <Faq language={language} />} {/* Pass language to Faq */}
       </main>
-      <Footer />
+      <Footer language={language} /> {/* Pass language to Footer */}
     </div>
   );
 };
