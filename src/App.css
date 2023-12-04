@@ -184,7 +184,7 @@ label {
 }
 
 /* Style form input fields */
-input {
+.user_id, .user_name, .user_message {
   width: 100%; /* Take the full width of the container */
   padding: 10px;
   margin-bottom: 15px;
@@ -200,11 +200,11 @@ input {
 }
 
 .user_id {
-  width: 100%;
+  width: 102%;
 }
 
 .user_message{
-  width: 150%;
+  width: 116%;
   height: 300px;
   word-wrap: break-word;
 }
