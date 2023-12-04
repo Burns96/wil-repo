@@ -1,4 +1,4 @@
-/* Home.css */
+
 
 .home-body {
   text-align: center;
@@ -6,52 +6,52 @@
 }
 
 .home-title {
-  font-size: 2em; /* Adjust this value as needed for different screen sizes */
+  font-size: 2em; 
   color: black;
-  margin-bottom: 20px; /* Adds some space below the title */
-  /* Removed the absolute positioning and transform properties */
+  margin-bottom: 20px; 
+  
 }
 
 .home-body-images {
   display: flex;
-  justify-content: center; /* Center images horizontally */
-  align-items: center; /* Align images vertically */
-  /* Removed the margin-bottom property since the title is now above the images */
+  justify-content: center; 
+  align-items: center; 
+  
 }
 
 .home-body-images img {
-  width: 50%; /* Each image takes half of the container's width */
-  height: 300px; /* Fixed height for both images */
-  object-fit: cover; /* Ensure the images cover their area */
+  width: 50%; 
+  height: 300px; 
+  object-fit: cover; 
 }
 
-/* Specific style for the second image to flip it */
+
 .home-body-images img:last-child {
-  transform: scaleX(-1); /* Flip the second image horizontally */
+  transform: scaleX(-1); 
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 1200px) {
   .home-title {
-    font-size: 1.75em; /* Smaller font size on medium screens */
+    font-size: 1.75em; 
   }
 }
 
 @media (max-width: 768px) {
   .home-title {
-    font-size: 1.5em; /* Smaller font size on small screens */
+    font-size: 1.5em; 
   }
   .home-body-images {
-    flex-direction: column; /* Stack images vertically on small screens */
+    flex-direction: column; 
   }
   .home-body-images img {
-    width: 80%; /* Each image takes more space when stacked */
-    margin-bottom: 10px; /* Add space between the stacked images */
+    width: 80%; 
+    margin-bottom: 10px; 
   }
 }
 
 @media (max-width: 480px) {
   .home-title {
-    font-size: 1.25em; /* Smaller font size for very small screens */
+    font-size: 1.25em; 
   }
 }

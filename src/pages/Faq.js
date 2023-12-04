@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { translateText } from '../components/Translate.js'; // Adjust the path as necessary
+import { translateText } from '../components/Translate.js'; 
 import {
   UncontrolledAccordion,
   AccordionBody,
@@ -18,7 +18,7 @@ const Faq = ({ language }) => {
         { question: "FAQ 3", answer: "FAQ 3 answer will go here" },
         { question: "FAQ 4", answer: "FAQ 4 answer will go here" },
         { question: "FAQ 5", answer: "FAQ 5 answer will be here" },
-        // Add more FAQs as needed
+        
       ];
 
       const translations = await Promise.all(questionsAnswers.map(async qa => {

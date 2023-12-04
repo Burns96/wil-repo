@@ -4,17 +4,17 @@ import ContactUs from './pages/ContactUs';
 import Faq from './pages/Faq';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { translateText } from './components/Translate'; // Make sure the path is correct
+import { translateText } from './components/Translate'; 
 import './App.css';
 
 const App = () => {
   const [page, setPage] = useState('Home');
-  const [language, setLanguage] = useState('en'); // Initialize language state
+  const [language, setLanguage] = useState('en'); 
   const [navTexts, setNavTexts] = useState({
     home: 'Home',
     faq: 'FAQ',
     contactUs: 'Contact Us'
-    // Add more navigation items as needed
+    
   });
 
   useEffect(() => {

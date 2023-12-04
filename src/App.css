@@ -36,7 +36,7 @@ button:hover {
   background-color: #ddd;
 }
 
-/* Media query for footer in global scope as an example */
+
 @media screen and (min-width: 768px) {
   .footer {
     justify-content: space-around;
@@ -130,19 +130,19 @@ p {
 }
 */
 
-/* Reset some default styles */
+
 body, h1, h2, p, form {
   margin: 0;
   padding: 0;
 }
 
-/* Apply a modern font */
+
 body {
   font-family: 'Sans', sans-serif;
-  background-color: #f4f4f4; /* Light gray background color for the body */
+  background-color: #f4f4f4; 
 }
 
-/* Style the main container */
+
 .contact-container {
   display: flex;
   justify-content: space-around;
@@ -150,7 +150,7 @@ body {
   padding: 20px;
 }
 
-/* Style the contact form container */
+
 .contact_us_form {
   background-color: #D9D9D9;
   float: left;
@@ -158,39 +158,39 @@ body {
   margin-left: 5%;
   padding: 2%;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   transition: transform 0.3s ease-in-out;
 }
 
-/* Hover effect for the form */
+
 .contact_us_form:hover {
   transform: scale(1.02);
 }
 
-/* Style the form heading */
+
 .contact_us_form h1 {
   font-size: 42px;
   margin-bottom: 20px;
-  color: #333; /* Dark text color */
+  color: #333; 
   text-align: center;
 }
 
-/* Style form labels */
+
 label {
   display: block;
   margin-bottom: 10px;
   font-size: 16px;
-  color: #555; /* Slightly darker text color */
+  color: #555; 
 }
 
-/* Style form input fields */
+
 .user_id, .user_name, .user_message {
-  width: 100%; /* Take the full width of the container */
+  width: 100%; 
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background-color: #f9f9f9; /* Light gray background color for input fields */
+  background-color: #f9f9f9; 
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
@@ -209,13 +209,13 @@ label {
   word-wrap: break-word;
 }
 
-/* Input field focus effect */
+
 input:focus {
-  border-color: #3498db; /* Highlight color on focus */
-  background-color: #fff; /* White background on focus */
+  border-color: #3498db; 
+  background-color: #fff; 
 }
 
-/* Style the submit button */
+
 .btn_submit {
   background-color: #3498db;
   color: #fff;
@@ -228,28 +228,28 @@ input:focus {
   float: right;
 }
 
-/* Button hover effect */
+
 .btn_submit:hover {
-  background-color: #267bbf; /* Darker color on hover */
+  background-color: #267bbf; 
 }
 
-/* Style the departments container */
+
 .departments {
   width: 50%;
 }
 
-/* Style each department */
+
 .departments h1 {
   font-size: 42px;
   margin-bottom: 20px;
-  color: #333; /* Dark text color */
+  color: #333; 
 }
 
 .dep1, .dep2 {
-  background-color: #f9f9f9; /* Light gray background color for department divs */
+  background-color: #f9f9f9; 
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   transition: transform 0.3s ease-in-out;
 }
 
@@ -268,20 +268,20 @@ input:focus {
 }
 
 
-/* Style department headings */
+
 .departments h2 {
   font-size: 20px;
   margin-top: 15px;
-  color: #333; /* Dark text color */
+  color: #333; 
 }
 
-/* Style department addresses and contact information */
+
 .departments p {
   margin-bottom: 10px;
-  color: #555; /* Slightly darker text color */
+  color: #555; 
 }
 
-/* Responsive styles */
+
 @media only screen and (max-width: 768px) {
   .contact-container {
     flex-direction: column;

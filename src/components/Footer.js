@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { translateText } from './Translate'; // Adjust the path as necessary
+import { translateText } from './Translate'; 
 import './Footer.css'; 
 
 const Footer = ({ language }) => {
@@ -18,7 +18,7 @@ const Footer = ({ language }) => {
   }, [language]);
 
   const handleLinkClick = (e, socialMediaName) => {
-    e.preventDefault(); // Prevent the default link action
+    e.preventDefault(); 
     alert(socialMediaMessage.replace('{socialMediaName}', socialMediaName));
   };
 
