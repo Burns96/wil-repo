@@ -1,7 +1,9 @@
+// Header.js
 import React, { useState } from 'react';
+import Navigation from './Navigation'; // Import the Navigation component
 import './Header.css';
 
-const Header = ({ setPage, setLanguage }) => {  // Added setLanguage prop
+const Header = ({ setPage, setLanguage }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleItemClick = (pageName) => {
@@ -41,13 +43,8 @@ const Header = ({ setPage, setLanguage }) => {  // Added setLanguage prop
         <input type="text" placeholder="Search..." />
         <button>Search</button>
       </div>
-      {/* Toggle navigation for mobile */}
-      <nav className={`navigation ${isMobileMenuOpen ? 'show' : ''}`}>
-        <a href="#home" onClick={() => handleItemClick('Home')}>Home</a>
-        <a href="#faq" onClick={() => handleItemClick('Faq')}>FAQ</a>
-        <a href="#contact" onClick={() => handleItemClick('ContactUs')}>Contact Us</a>
-        {/* Additional links can be added here */}
-      </nav>
+      {/* Render the Navigation component */}
+      <Navigation setPage={setPage} />
     </header>
   );
 };

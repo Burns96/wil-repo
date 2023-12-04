@@ -1,3 +1,4 @@
+// App.js
 import React, { useState, useEffect } from 'react';
 import Home from './pages/Home';
 import ContactUs from './pages/ContactUs';

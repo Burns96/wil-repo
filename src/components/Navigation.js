@@ -8,10 +8,10 @@ const Navigation = ({ setPage }) => {
 
   return (
     <div className="navigation">
-      <a href="#" onClick={() => handleItemClick('Home')}>Home</a>
-      <a href="#" onClick={() => handleItemClick('Contact')}>Contact Us</a>
-      <a href="#" onClick={() => handleItemClick('Faq')}>FAQ</a>
-      <a href="#" onClick={() => handleItemClick('Login')}>Login</a>
+      <a href="#home" onClick={() => handleItemClick('Home')}>Home</a>
+      <a href="#faq" onClick={() => handleItemClick('Faq')}>FAQ</a>
+      <a href="#contact" onClick={() => handleItemClick('ContactUs')}>Contact Us</a>
+      {/* Additional links can be added here */}
     </div>
   );
 };
