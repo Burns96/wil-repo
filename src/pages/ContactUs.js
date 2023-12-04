@@ -1,6 +1,12 @@
 import React from 'react';
 
 function ContactUs() {
+
+  const handleButtonClick = () => {
+    alert('Message received!');
+  };
+
+  
   return (
     <>
       <head>
@@ -22,8 +28,9 @@ function ContactUs() {
             <label>
               Message: <input type="text" className="user_message" />
             </label><br></br><br></br>
-            <button type="button" className="btn_submit">
-              <b>SUBMIT</b>
+            <button type="button" className="btn_submit" onClick={handleButtonClick}>
+              <b>SUBMIT</b> 
+
             </button>
           </form>
         </div>
@@ -59,9 +66,13 @@ function ContactUs() {
             <p>517-546-7461</p>
           </div>
         </div>
+
+
       </main>
     </>
   );
 }
+
+
 
 export default ContactUs;
