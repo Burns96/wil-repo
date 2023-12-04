@@ -12,7 +12,7 @@ const Navigation = ({ setPage, texts }) => {
       <a href="#home" onClick={() => handleItemClick('Home')}>{texts.home}</a>
       <a href="#faq" onClick={() => handleItemClick('Faq')}>{texts.faq}</a>
       <a href="#contact" onClick={() => handleItemClick('ContactUs')}>{texts.contactUs}</a>
-      
+      <a href="#login" onClick={() => handleItemClick('Login')}>{texts.login}</a>
     </div>
   );
 };

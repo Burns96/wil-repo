@@ -23,10 +23,11 @@ const Home = ({ language }) => {
   return (
     <div>
       <div className="home-body">
-        <h1 className="home-title">{translatedText.homeTitle}</h1>
+        {/* <h1 className="home-title">{translatedText.homeTitle}</h1> */}
         <div className="home-body-images">
-          <img src="Old_town.jpg" alt={translatedText.oldTownAlt} />
-          <img src="new_town.jpg" alt={translatedText.newTownAlt} style={{ transform: 'scaleX(-1)' }} />
+          {/* <img src="Old_town.jpg" alt={translatedText.oldTownAlt} />
+          <img src="new_town.jpg" alt={translatedText.newTownAlt} style={{ transform: 'scaleX(-1)' }} /> */}
+          <img src="name.png" alt="logo" />
         </div>
       </div>
     </div>

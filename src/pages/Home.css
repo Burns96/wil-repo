@@ -16,20 +16,18 @@
   display: flex;
   justify-content: center; 
   align-items: center; 
-  
+  margin-top: 15rem;
 }
 
-.home-body-images img {
+/* .home-body-images img {
   width: 50%; 
   height: 300px; 
   object-fit: cover; 
 }
 
-
 .home-body-images img:last-child {
   transform: scaleX(-1); 
-}
-
+} */
 
 @media (max-width: 1200px) {
   .home-title {

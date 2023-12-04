@@ -9,7 +9,7 @@ const Header = ({ setPage, setLanguage, texts }) => {
     setIsMobileMenuOpen(!isMobileMenuOpen); 
   };
 
-  
+
   const handleLanguageChange = (language) => {
     setLanguage(language); 
   };

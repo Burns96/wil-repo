@@ -18,6 +18,12 @@ body {
   min-height: 100%;
 }
 
+.site-container{
+  width: 100%;
+  min-height: 100vh;
+  background: url("../public/night3.jpeg") no-repeat center center/cover;
+}
+
 /* Global Styles */
 a {
   text-decoration: none;
