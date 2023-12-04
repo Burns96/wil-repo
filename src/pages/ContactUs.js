@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { translateText } from '../components/Translate.js'; // Adjust the path as necessary
+import { translateText } from '../components/Translate.js'; 
 
 function ContactUs({ language }) {
   const [translatedContent, setTranslatedContent] = useState({
@@ -10,7 +10,7 @@ function ContactUs({ language }) {
     submit: 'SUBMIT',
     departments: 'DEPARTMENTS',
     cityHall: 'City Hall',
-    // ... Add other content that needs translation
+
   });
 
   useEffect(() => {
@@ -23,13 +23,18 @@ function ContactUs({ language }) {
         submit: await translateText('SUBMIT', language),
         departments: await translateText('DEPARTMENTS', language),
         cityHall: await translateText('City Hall', language),
-        // ... Translate other content
+
       };
       setTranslatedContent(translated);
     };
 
     translateContent();
   }, [language]);
+
+
+  const handleButtonClick = () => { // delete this if it doesnt work
+    alert('Message received!');
+  };
 
   return (
     <>
@@ -46,8 +51,10 @@ function ContactUs({ language }) {
             <label>
               {translatedContent.message} <input type="text" className="user_message" />
             </label><br></br><br></br>
-            <button type="button" className="btn_submit">
+
+            <button type="button" className="btn_submit" onClick={handleButtonClick}>
               <b>{translatedContent.submit}</b>
+
             </button>
           </form>
         </div>

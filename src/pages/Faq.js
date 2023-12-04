@@ -38,6 +38,7 @@ const Faq = ({ language }) => {
       <Card className='card-faq'>
         <CardBody className='card-body-faq'>
           <UncontrolledAccordion defaultOpen="1">
+
             {translatedFAQs.map((faq, index) => (
               <AccordionItem key={index}>
                 <AccordionHeader targetId={String(index)}>
@@ -48,6 +49,7 @@ const Faq = ({ language }) => {
                 </AccordionBody>
               </AccordionItem>
             ))}
+
           </UncontrolledAccordion>
         </CardBody>
       </Card>
